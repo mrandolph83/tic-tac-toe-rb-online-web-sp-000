@@ -46,10 +46,10 @@ def turn(board)
   end
 end
 
-def turn_count(board)
+def turn(board)
 i = 0
 while i < 9
   i += 1
-  turn_count(board)
+  turn(board)
 end
 end
