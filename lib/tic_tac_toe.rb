@@ -46,10 +46,12 @@ def turn(board)
   end
 end
 
-def turn(board)
-i = 0
-while i < 9
-  i += 1
-  turn(board)
-end
+def turn_count(board)
+  turn = 0
+  board.each do |index|
+    if index == "X" || index == "O"
+      turn += 1
+    end
+  end
+  return turn
 end
